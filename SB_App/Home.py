@@ -188,11 +188,11 @@ def sideBar():
  if selected=="Home":
     #st.subheader(f"Page: {selected}")
     Home()
-    graphs()
+    # graphs()
  if selected=="Progress":
     #st.subheader(f"Page: {selected}")
     Progressbar()
-    graphs()
+    # graphs()
 
 sideBar()
 st.sidebar.image("data/logo1.png",caption="")
@@ -213,7 +213,7 @@ fig2 = go.Figure(
     )
 )
 # Display the Plotly figure using Streamlit
-st.plotly_chart(fig2,use_container_width=True)
+# st.plotly_chart(fig2,use_container_width=True)
 
 
 
