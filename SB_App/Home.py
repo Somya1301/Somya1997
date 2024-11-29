@@ -7,7 +7,9 @@ import time
 from streamlit_extras.metric_cards import style_metric_cards
 # st.set_option('deprecation.showPyplotGlobalUse', False)
 import plotly.graph_objs as go
-
+import warnings
+warnings.filterwarnings("ignore", message="numpy.dtype size changed")
+warnings.filterwarnings("ignore", message="numpy.ufunc size changed")
 #uncomment this line if you use mysql
 #from query import *
 
