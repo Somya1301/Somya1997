@@ -7,9 +7,15 @@ import time
 from streamlit_extras.metric_cards import style_metric_cards
 # st.set_option('deprecation.showPyplotGlobalUse', False)
 import plotly.graph_objs as go
+import pandas.plotting._matplotlib
 import warnings
 warnings.filterwarnings("ignore", message="numpy.dtype size changed")
 warnings.filterwarnings("ignore", message="numpy.ufunc size changed")
+
+import matplotlib
+import matplotlib.backends.backend_tkagg
+matplotlib.use('tkagg')
+
 #uncomment this line if you use mysql
 #from query import *
 
